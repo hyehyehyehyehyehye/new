@@ -1,0 +1,109 @@
+.border {
+  width: 1px;
+  height: 1px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  /* transparent -> 안보이게 하기 */
+  border-left: 10px solid yellow;
+  border-bottom: 10px solid green;
+}
+
+.border_tip {
+  position: relative;
+  width: 400px;
+  left: 50%;
+  top: 100px;
+  transform: translateX(calc(-400px / 2));
+  background-color: skyblue;
+}
+
+.border_tip::before {
+  content: "";
+  position: absolute;
+  border-top: 10px solid skyblue;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(calc(-20px / 2));
+}
+
+.border_tip::after {
+  content: "";
+  position: absolute;
+  border-bottom: 10px solid skyblue;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -10px;
+  left: 50%;
+  transform: translateX(calc(-20px / 2));
+}
+.border {
+  width: 1px;
+  height: 1px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  /* transparent -> 안보이게 하기 */
+  border-left: 10px solid yellow;
+  border-bottom: 10px solid green;
+}
+
+.border_tip {
+  position: relative;
+  width: 400px;
+  left: 50%;
+  top: 100px;
+  transform: translateX(calc(-400px / 2));
+  background-color: skyblue;
+}
+
+.border_tip::before {
+  content: "";
+  position: absolute;
+  border-top: 10px solid skyblue;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(calc(-20px / 2));
+}
+
+.border_tip::after {
+  content: "";
+  position: absolute;
+  border-bottom: 10px solid skyblue;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -10px;
+  left: 50%;
+  transform: translateX(calc(-20px / 2));
+}
+
+/* 숙제 */
+.tip {
+  padding: 10px;
+}
+
+.tip::after {
+  content: "";
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid rgb(68, 255, 0);
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  left: -20px;
+  transform: translateY(calc(-20px / 2));
+}
+
+.tip::before {
+  content: "";
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid rgb(68, 255, 0);
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  right: -20px;
+  transform: translateY(calc(-20px / 2));
+}
