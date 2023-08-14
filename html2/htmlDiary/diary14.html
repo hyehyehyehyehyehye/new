@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cf::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        #wrap {
+            width: 600px;
+
+            border: 1px solid;
+            margin: auto;
+        }
+
+        header {
+            margin: 10px;
+            border: 1px solid;
+            padding: 10px;
+            height: 40px;
+            position: relative;
+        }
+
+        h1 {
+            background-color: aqua;
+            position: absolute;
+        }
+
+        header ul {
+            list-style: none;
+            position: absolute;
+            right: 10px;
+        }
+
+        header ul li {
+            float: left;
+            margin: 0 2px;
+            border: 1px solid;
+            padding: 2px 5px;
+        }
+
+        header ul li:hover {
+            background-color: aqua;
+            height: 100px;
+        }
+
+
+        nav {
+            margin-left: 10px;
+            width: 80px;
+            border: 1px solid;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+
+
+        nav ul {
+            list-style: none;
+        }
+
+
+        section {
+            width: 300px;
+            height: 380px;
+            padding: 10px;
+            border: 1px solid;
+            margin-left: 8px;
+        }
+
+
+        aside {
+            background: url(./Diary01/img/fox.jpg) no-repeat;
+            margin-right: 10px;
+            width: 140px;
+            height: 400px;
+            border: 1px solid;
+            background-position-x: -150px;
+            background-size: cover;
+        }
+
+
+        .contents1 img {
+            border: 1px solid;
+            margin-left: 10px;
+            width: 100px;
+            box-sizing: content-box;
+        }
+
+        .contents1 img:hover {
+            width: 50%;
+            position: absolute;
+        }
+
+        .contents1 {
+            border-bottom: 1px solid;
+            height: 400px;
+            padding-bottom: 10px;
+        }
+
+
+
+
+        footer {
+
+            border: 1px solid;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>column layout</h1>
+            <ul>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+            </ul>
+        </header>
+
+        <main>
+
+            <div class="contents1 cf">
+                <div class="fl">
+                    <nav>
+                        <h2>sidebar</h2>
+                        <ul>
+                            <li>lorem</li>
+                            <li>ipsum</li>
+                            <li>dolor</li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <h2>sidebar</h2>
+                        <ul>
+                            <li>lorem</li>
+                            <li>ipsum</li>
+                            <li>dolor</li>
+                        </ul>
+                    </nav>
+                    <img src="./Diary01/img/nature/mountain.jpg" alt="">
+                </div>
+                <section class="fl">
+                    <h2>content</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis est doloremque fugit ullam
+                        veritatis
+                        assumenda
+                        voluptas nihil harum doloribus rem optio neque at, numquam molestias explicabo corrupti veniam
+                        accusantium
+                        id.
+                        <br>
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quo modi, tempora quia quibusdam
+                        saepe
+                        porro
+                        soluta nostrum quos fuga repellendus quam perspiciatis in facilis, aliquid molestias corporis,
+                        et
+                        expedita?
+                        <br>
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quo modi, tempora quia quibusdam
+                        saepe
+                        porro
+                        soluta nostrum quos fuga repellendus quam perspiciatis in facilis, aliquid molestias corporis,
+                        et
+                        expedita?
+                    </p>
+                </section>
+                <aside class="fr">
+                </aside>
+            </div>
+
+        </main>
+
+
+        <footer>
+            copyright
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form복습 + background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 600px;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        body::before {
+            background: url(./Diary11/pizza-pattern.jpeg);
+            opacity: .5;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        h1 {
+            background-color: antiquewhite;
+            text-align: center;
+            margin-bottom: 10px;
+            border: 3px solid;
+            border-radius: 20px;
+            font-size: 50px;
+        }
+
+        form {
+            background: url(./Diary11/pizza.jpeg) no-repeat;
+            background-size: 200px;
+            background-position: top right;
+            border: 3px solid;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        p {
+            padding: 10px;
+            padding-left: 30px;
+        }
+
+        fieldset {
+            width: 300px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        p,
+        fieldset {
+            font-size: 24px;
+        }
+
+        .topping,
+        .size,
+        textarea {
+            border-radius: 10px;
+        }
+
+        fieldset label {
+            display: block;
+            padding: 5px;
+        }
+
+        input#butten {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="all">
+    <h1>pizza</h1>
+    <form action="post">
+        <div class="basic">
+            <p>고객명: <input type="text" name="name" id="username" value="이름"></p>
+            <p>비밀번호: <input type="password" name="password" id="userpassword" placeholder="비밀번호"></p>
+            <P>전화번호: <input type="tel" name="tel" id="usertel"></P>
+            <p>이메일: <input type="email" name="email" id="useremail"></p>
+            <p>피자선택:
+                <select name="userchoice" id="choice">
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                </select>
+            </p>
+        </div>
+
+        <fieldset class="size">
+            <legend>피자사이즈</legend>
+            <label><input type="radio" name="size" id="small" value="s"> small</label>
+            <label><input type="radio" name="size" id="medium" value="m"> medium</label>
+            <label><input type="radio" name="size" id="large" value="l"> large</label>
+        </fieldset>
+
+        <fieldset class="topping">
+            <legend>토핑선택</legend>
+            <label><input type="checkbox" name="topping1" id="bacon" value="s"> bacon</label>
+            <label><input type="checkbox" name="topping2" id="cheese" value="m"> cheese</label>
+            <label><input type="checkbox" name="topping3" id="onion" value="l"> onion</label>
+            <label><input type="checkbox" name="topping4" id="mushroom" value="l"> mushroom</label>
+        </fieldset>
+        <p>희망배송시간 <input type="time" name="usertime" id="time"></p>
+        <p>
+            <label for="usetText">배송시 요청 사항</label><br>
+            <textarea name="usetText" id="usetText" cols="37" rows="10"></textarea>
+        </p>
+
+        <p><input type="submit" name="spend" id="butten" value="주문하기"></p>
+    </form>
+</body>
+</html>

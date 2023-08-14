@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* 웹폰트파일을 임포트 하는 css */
+/* 서체파일의 임포트 순서ㅡㄴ .eot(ie9이하), .woff, .ttf, svg */
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url(./GmarketSansTTFBold.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url(./GmarketSansTTFMedium.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url(./GmarketSansTTFLight.ttf);
+  font-weight: 300;
+}
+
+body {
+  font-family: "GmarketSans", sans-serif;
+}

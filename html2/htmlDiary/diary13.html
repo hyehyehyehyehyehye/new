@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        #square {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 200px 100px;
+            animation: lotate 3s cubic-bezier(0.96, 0, 0, 0.97) infinite alternate;
+        }
+
+        #square:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes lotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(90deg);
+                background-color: aqua;
+            }
+
+            100% {
+                transform: rotate(360deg);
+                background-color: aquamarine;
+                width: 300px;
+            }
+        }
+
+        #round {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 166, 0);
+            margin: 100px 200px;
+            border-radius: 100px;
+            animation: lound 3s cubic-bezier(0.96, 0, 0, 0.97) infinite alternate;
+        }
+
+        @keyframes lound {
+            0% {
+                transform: scale(0);
+                transform: translate(0);
+            }
+
+            30% {
+                transform: scale(1.5);
+                transform: translate(200px, 200px);
+            }
+
+            60% {
+                transform: scale(3);
+                transform: translate(0, 200px);
+            }
+
+            100% {
+                transform: scale(0);
+                transform: translate(200px, 0);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="square"></div>
+    <div id="round"></div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #727272;
+        }
+
+        .warp {
+            width: 414px;
+            height: 736px;
+            background-color: rgb(248, 248, 248);
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            position: relative;
+            left: 40px;
+            top: 40px;
+        }
+
+        h1 {
+            color: #000;
+            font-family: Pretendard;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 32px;
+            /* 88.889% */
+        }
+
+        header p {
+            border-radius: 20px;
+            background: #D0D0D0;
+            position: fixed;
+            top: 96px;
+            padding: 0 5px;
+            font-family: Pretendard;
+            font-weight: 300;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .container {
+            width: 374px;
+            height: 350px;
+            position: relative;
+            top: 136px;
+            left: 40px;
+
+        }
+
+        .inner {
+            width: 240px;
+            height: 350px;
+            position: absolute;
+            left: 0;
+            background-color: #D0D0D0;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgb(206, 206, 206);
+        }
+
+        .inner .picture {
+            width: 240px;
+            height: 260px;
+            background: url(./Diary16/1.jpeg) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .inner .text {
+            width: 240px;
+            height: 90px;
+            padding: 12px 20px;
+            background: #F5F5F5;
+        }
+
+        .inner .text h3 {
+            color: #000;
+            font-family: Pretendard;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .inner .text p {
+            width: 200px;
+            height: 32px;
+            overflow: hidden;
+            color: #727272;
+            font-family: Pretendard;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .inner2 {
+            width: 240px;
+            height: 350px;
+            position: absolute;
+            left: 265px;
+            background-color: #D0D0D0;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgb(206, 206, 206);
+        }
+
+        .inner2 .picture {
+            width: 240px;
+            height: 260px;
+            background: url(./Diary16/2.jpeg) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .inner2 .text {
+            width: 240px;
+            height: 90px;
+            padding: 12px 20px;
+            background: #F5F5F5;
+        }
+
+        .inner2 .text h3 {
+            color: #000;
+            font-family: Pretendard;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .inner2 .text p {
+            width: 200px;
+            height: 32px;
+            overflow: hidden;
+            color: #727272;
+            font-family: Pretendard;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <header>
+            <h1>My Gallery</h1>
+            <p>#동네</p>
+        </header>
+
+        <main>
+            <div class="container">
+                <nav class="inner">
+                    <div class="picture"></div>
+                    <div class="text">
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Scelerisque lectus commodo</p>
+                    </div>
+                </nav>
+                <nav class="inner2">
+                    <div class="picture"></div>
+                    <div class="text">
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Scelerisque lectus commodo</p>
+                    </div>
+                </nav>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
