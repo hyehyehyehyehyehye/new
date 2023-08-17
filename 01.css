@@ -137,16 +137,6 @@ ol li > ul li {
   padding: 5px;
 }
 
-li span {
-  color: rgba(255, 255, 255, 0);
-  width: 800px;
-  margin: auto;
-}
-
-li:hover span {
-  color: rgb(157, 157, 157);
-}
-
 footer > h3 {
   position: fixed;
   right: 30px;
