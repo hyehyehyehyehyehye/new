@@ -107,3 +107,58 @@
   right: -20px;
   transform: translateY(calc(-20px / 2));
 }
+
+.speech_bubble {
+  max-width: 300px;
+  margin: auto;
+  background-color: rgb(235, 235, 235);
+  padding: 80px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  border-radius: 50%;
+}
+.speech_bubble::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  border-right: 40px solid rgb(235, 235, 235);
+  border-left: 40px solid transparent;
+  bottom: -10px;
+  left: -20px;
+}
+
+.heart {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  position: relative;
+  margin: auto;
+  top: 200px;
+}
+
+.heart::before {
+  content: "";
+  width: 80px;
+  height: 136px;
+  background-color: white;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 39px;
+  top: 30px;
+  border-radius: 50px 50px 0 0;
+}
+
+.heart::after {
+  content: "";
+  width: 80px;
+  height: 130px;
+  background-color: white;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 39px;
+  top: 30px;
+  border-radius: 50px 50px 0 0;
+}
