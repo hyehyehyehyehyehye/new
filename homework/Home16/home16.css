@@ -58,6 +58,29 @@
   height: 425px;
   margin: auto;
   background-color: rgb(78, 158, 78);
+  display: flex;
+  justify-content: space-between;
+}
+.bg_container .news {
+  width: 346px;
+  height: 316px;
+  border-radius: 50px 20px 20px 20px;
+  background-color: aliceblue;
+  margin-top: 53px;
+}
+.bg_container .info {
+  width: 346px;
+  height: 316px;
+  border-radius: 20px 20px 20px 50px;
+  background-color: aliceblue;
+  margin-top: 53px;
+}
+.bg_container .link {
+  width: 346px;
+  height: 316px;
+  border-radius: 20px 50px 20px 20px;
+  background-color: aliceblue;
+  margin-top: 53px;
 }
 
 .bg_container2 {
