@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = prompt('국어점수는?');
+        let y = prompt('영어점수는?');
+        let z = prompt('수학점수는?');
+        const add = x + y + z;
+        let average = add / 3 >= 70 && x >= 60 && y >= 60 && z >= 60;
+        document.write(`${average}`)
+    </script>
+</body>
+</html>
