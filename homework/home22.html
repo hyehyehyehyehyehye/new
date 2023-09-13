@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            margin: 20px;
+            float: left;
+        }
+
+        table,
+        th {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px 15px;
+        }
+
+        th {
+            background: #eee;
+        }
+
+        td {
+            border: 1px dotted #222;
+        }
+    </style>
+</head>
+<body>
+    <h1>자리배치도</h1>
+    <script>
+        let user = prompt('총 입장객은 몇명입니까?');
+        let col = prompt('한 줄에 몇 명이 앉을 계획입니까?');
+
+        if (user % col === 0) { //총인원 / 한줄인원 나머지가 0이면 true
+            row = parseInt((user / col))
+        }
+        else {
+            row = parseInt((user / col) + 1);
+        }
+
+        document.write("<table>")
+        for (let i = 0; i < row; i++) {
+            document.write("<tr>");
+            for (let j = 1; j <= col; j++) {
+                seat = i * col + j;
+                if (seat > user) break
+                document.write("<td> 좌석 " + seat + " </td>")
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
